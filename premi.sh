@@ -31,7 +31,7 @@ clear
 ipsaya=$(curl -sS ipv4.icanhazip.com)
 data_server=$(curl -v --insecure --silent https://google.com/ 2>&1 | grep Date | sed -e 's/< Date: //')
 date_list=$(date +"%Y-%m-%d" -d "$data_server")
-data_ip="https://raw.githubusercontent.com/xhidrolix/izin/main/ip"
+data_ip="https://raw.githubusercontent.com/script-vpn-premium/izin/main/ip"
 checking_sc() {
   useexp=$(wget -qO- $data_ip | grep $ipsaya | awk '{print $3}')
   if [[ $date_list < $useexp ]]; then
@@ -110,7 +110,7 @@ gem install lolcat
 apt install wondershaper -y
 clear
 # REPO    
-    REPO="https://raw.githubusercontent.com/xhidrolix/scriptvpn/main/"
+    REPO="https://raw.githubusercontent.com/script-vpn-premium/Riswan/main/"
 
 ####
 start=$(date +%s)
@@ -297,7 +297,7 @@ curl "ipinfo.io/city?token=7a814b6263b02c" > /root/.city
 MYIP=$(curl -sS ipv4.icanhazip.com)
 echo -e "\e[32mloading...\e[0m" 
 clear
-izinsc="https://raw.githubusercontent.com/xhidrolix/izin/main/ip"
+izinsc="https://raw.githubusercontent.com/script-vpn-premium/izin/main/ip"
 # USERNAME
 rm -f /usr/bin/user
 username=$(curl $izinsc | grep $MYIP | awk '{print $2}')
@@ -333,8 +333,8 @@ else
 sts="${Error}"
 fi
 TIMES="10"
-CHATID="-1002156905690"
-KEY="7131481321:AAGI3LtovNqUG65-Uf9aMM93n_RzrCRg8Oo"
+CHATID="-100215690690"
+KEY="7131481321:GI3LtovNqUG65-Uf9aM93n_RzrCRg8Oo"
 URL="https://api.telegram.org/bot$KEY/sendMessage"
 ISP=$(cat /root/.isp)
 CITY=$(cat /root/.city)
@@ -1039,11 +1039,11 @@ echo ""
 echo ""
 echo "------------------------------------------------------------"
 echo ""
-echo "===============-[ SCRIPT BY VnzVPN ]-==============="
+echo "===============-[ SCRIPT BY Riswan ]-==============="
 echo -e ""
 echo ""
 echo "" | tee -a log-install.txt
-echo "ThanksYou For Using Script VnzVPN"
+echo "ThanksYou For Using Script Riswan"
 sleep 1
 echo -ne "[ ${yell}COMPLETED${NC} ] PENGINSTALAN SCRIPT SELESAI KETIK Y UNTUK REBOOT ! (y/n)? "
 read answer
